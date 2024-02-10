@@ -55,14 +55,24 @@
             </div>
         </div>
     </section>
-
-
-    <video width="100" height="360" margin-bottom="20px" controls>
+<video width="400" height="360" margin-bottom="20px" controls id="myVideo">
   <source src="Video.mp4" type="Video/mp4">
   Your browser does not support the video tag.
-  <button id="playPauseBtn">Play/Pause</button>
 </video>
 
+<button onclick="togglePlayPause()">Play/Pause</button>
+
+<script>
+  var video = document.getElementById("myVideo");
+
+  function togglePlayPause() {
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  }
+</script>
 
     <section id="about">
         <div class="container">

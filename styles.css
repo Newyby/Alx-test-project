@@ -208,3 +208,8 @@ footer {
 	color: #fff;
 	text-align: center;
 }
+/* About video Styles */
+iframe {
+  display: block;
+  margin: auto;
+}
